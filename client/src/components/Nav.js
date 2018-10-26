@@ -1,28 +1,68 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch, Link, Redirect, withRouter } from "react-router-dom";
 import { Layout, Menu, Breadcrumb, Row, Col } from 'antd';
+import "./Nav.css";
 
 const { Header, Content, Footer } = Layout;
+
+const HeaderStyle = {
+  boxShadow: "none", 
+  maxWidth: "1200px", 
+  width: "100%", 
+  margin: "20px auto 0", 
+  padding: "0 24px", 
+  background: "transparent"
+}
+
+const LogoStyle = {
+  float: "left", 
+  height: "64px",
+  width: "auto", 
+  marginRight: "15px"
+}
+
+const LogoTextStyle = {
+  display: "inline", 
+  fontFamily: "Merriweather", 
+  borderLeft: "1px solid #e5e7ea", 
+  paddingLeft: "15px", 
+  fontSize: "1.5em",
+  letterSpacing: "1.7px",
+  textShadow: "0px 1px 1px rgba(150, 150, 150, 0.6)",
+}
+
+const MenuStyle = {
+  width: "100%",
+  background: "transparent",
+  border: "none",
+}
+
+const MenuItemStyle = {
+  float: "right",
+  fontSize: "1.5em",
+  color: "#E7D6CE",
+  marginTop: "7px",
+}
 
 class Nav extends Component {
   render() {
     return (
-      <Header style={{boxShadow:"none", maxWidth:"1200px", width:"100%", margin:"20px auto 0", padding:"0 24px"}}>
-
-        <img className="list-inline" src="https://via.placeholder.com/100" style={{float: "left"}}></img>
-
-        <Menu
-          theme="dark"
-          mode="horizontal"
-          defaultSelectedKeys={['2']}
-          style={{ lineHeight: '64px' }}
-        >
-          <Menu.Item key="1">nav 1dqwdwqdwqdwqdwqdwqdqwdqwdqdwqd</Menu.Item>
-          <Menu.Item key="2">nav 2</Menu.Item>
-          <Menu.Item key="3">nav 3</Menu.Item>
-        </Menu>
-
-      </Header>   
+      <Header style={ HeaderStyle }>
+        <Row style={{ marginBottom: "20px" }}>
+          <Col xs={24} sm={24} md={11} lg={9} xl={9} xxl={8}>
+            
+              <img alt="logo" src={require("../images/wylerlogo-transparent.png")} style={ LogoStyle }></img>
+              <span style={ LogoTextStyle }>Wyler Instruments</span>
+                   
+          </Col>
+          <Col xs={0} sm={0} md={10} lg={15} xl={15} xxl={16} style={{ height: "66px" }}>
+            <Menu mode="horizontal" style={ MenuStyle }>
+              <Menu.Item style={ MenuItemStyle } key="2" push>About Us</Menu.Item>
+              <Menu.Item style={ MenuItemStyle } key="1">Home</Menu.Item>
+            </Menu>
+          </Col>
+        </Row>
+      </Header>
     )
   }
 }

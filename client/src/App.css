@@ -3,3 +3,8 @@
 .App {
   text-align: center;
 }
+
+body {
+  background-image: url("./images/background3-1.jpg");
+   background-size: cover;
+}
