@@ -1,11 +1,11 @@
 {
-  "name": "mern",
+  "name": "wylermusic",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
     "server": "node server.js",
-    "client": "node scripts/start-client.js",
+    "client": "cd client && npm run start",
     "start": "concurrently \"nodemon server.js\" \"npm run client\"",
     "build": "node scripts/build.js",
     "seed": "node scripts/seedDB.js",

@@ -1,11 +1,13 @@
 import React from "react";
-import Books from "./pages/Books";
-import Nav from "./components/Nav";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import './App.css';
+import Main from "./pages/Main.js";
 
 const App = () => (
   <div>
-    <Nav />
-    <Books />
+    <Router>
+      <Route path="/" component={ Main } />
+    </Router>
   </div>
 );
 
