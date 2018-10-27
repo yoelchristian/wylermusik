@@ -1,14 +1,13 @@
 .landingPage {
   width: 100vw;
   height: 100vh;
-  min-height: 1000px;
   background-image: url("../images/background3-1.jpg");
   background-size: cover;
+  overflow-x: hidden;
 }
 
 .backgroundCover {
   width: 100vw;
   height: 100vh;
-  min-height: 1000px;
   background-color: rgba(255,255,255,0.1);
 }

@@ -14,8 +14,12 @@ const ContentStyle = {
   background: "transparent",
 }
 
-const FontStyle = {
+const FontStyleTitle = {
   fontSize: "calc(18px + 1.2vw)"
+}
+
+const FontStyleSubtitle = {
+  fontSize: "calc(18px + 0.3vw)"
 }
 
 class LandingContent extends Component {
@@ -23,37 +27,16 @@ class LandingContent extends Component {
     return (
       <Content style={ ContentStyle }>
         <Row style={{ paddingLeft: "10px" }}>
-          <Col xs={24} sm={24} md={11} lg={10} xl={10} xxl={10} style={{ marginTop:"200px" }}>
-            <p style={ FontStyle }>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-            <p style={ FontStyle }>Vivamus a eros a diam sollicitudin congue eget quis dolor.</p>
+          <Col xs={24} sm={24} md={11} lg={10} xl={10} xxl={10} style={{ marginTop:"170px" }}>
+            <p style={ FontStyleTitle }>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            <p style={ FontStyleSubtitle }>Vivamus a eros a diam sollicitudin congue eget quis dolor.</p>
             
           </Col>
-          <Col xs={24} sm={24} md={13} lg={14} xl={14} xxl={14} style={{ height: "calc(100vh - 86px)"}}>
-          <Row style={{height: "50%"}}>
-            <Col span={12}>
-              <Card hoverable style={{width: "90%", height: "100%", background: "rgba(255,255,255,0.1)", border: "none"}}>
-                <img alt="sample" src={require("../images/wylerlogo-transparent.png")} style={{width:"100%"}}/>
-              </Card>
-            </Col>
-            <Col span={12}>
-              <Card hoverable style={{width: "90%", height: "100%", background: "rgba(255,255,255,0.1)", border: "none"}}>
-                <img alt="sample" src={require("../images/wylerlogo-transparent.png")} style={{width:"100%"}}/>
-              </Card>
-            </Col>
-          </Row>
-          <Row style={{marginTop:"20px"}}>
-            <Col span={12}>
-              <Card hoverable style={{width: "90%", height: "100%", background: "rgba(255,255,255,0.1)", border: "none"}}>
-                <img alt="sample" src={require("../images/wylerlogo-transparent.png")} style={{width:"100%"}}/>
-              </Card>
-            </Col>
-            <Col span={12}>
-              <Card hoverable style={{width: "90%", height: "100%", background: "rgba(255,255,255,0.1)", border: "none"}}>
-                <img alt="sample" src={require("../images/wylerlogo-transparent.png")} style={{width:"100%"}}/>
-              </Card>
-            </Col>
-          </Row>
-         </Col>
+          <Col xs={24} sm={24} md={13} lg={14} xl={14} xxl={14} style={{ height: "calc(100vh - 100px)"}}>
+            <video style={{height: "100%", opacity: "0.4", boxShadow: "2px 1px 3px 2px black"}} autoPlay muted loop>
+              <source src={require("../images/video1.mp4")} type="video/mp4"/>
+            </video>
+          </Col>
         </Row>
       </Content>
     )
