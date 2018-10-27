@@ -34,7 +34,7 @@ class LandingContent extends Component {
           </Col>
           <Col xs={24} sm={24} md={13} lg={14} xl={14} xxl={14} style={{ height: "calc(100vh - 100px)"}}>
             <video style={{height: "100%", opacity: "0.4", boxShadow: "2px 1px 3px 2px black"}} autoPlay muted loop>
-              <source src={require("../images/video1.mp4")} type="video/mp4"/>
+              <source src={require("../images/video.mp4")} type="video/mp4"/>
             </video>
           </Col>
         </Row>
