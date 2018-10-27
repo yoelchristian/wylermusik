@@ -40,8 +40,9 @@ const MenuStyle = {
 const MenuItemStyle = {
   float: "right",
   fontSize: "1.5em",
-  color: "#E7D6CE",
+  color: "rgb(214, 200, 194)",
   marginTop: "7px",
+  textShadow: "1px 1px 2px black"
 }
 
 class Nav extends Component {
