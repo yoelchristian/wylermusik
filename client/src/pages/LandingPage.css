@@ -10,6 +10,8 @@
 .backgroundCover {
   background-color: #eeeeee;
   opacity: 0.9;
+  width: 100vw;
+  height: 100%;
 }
 
 .shopNow {
@@ -58,20 +60,6 @@
 .shopNow:hover {
   background-color: rgb(73, 202, 150);
   box-shadow: 0px 15px 20px rgba(20, 194, 124, 0.4);
-  color: #fff;
-  transform: translateY(-7px);
-}
-
-.shopNows:hover {
-  background-color: rgb(44, 123, 175);
-  box-shadow: 0px 15px 20px rgba(17, 76, 185, 0.4);
-  color: #fff;
-  transform: translateY(-7px);
-}
-
-.shopNows:hover {
-  background-color: rgb(221, 153, 25);
-  box-shadow: 0px 15px 20px rgba(185, 107, 17, 0.4);
   color: #fff;
   transform: translateY(-7px);
 }
