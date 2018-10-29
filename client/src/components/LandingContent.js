@@ -17,31 +17,37 @@ const ContentStyle = {
 }
 
 const FontStyleTitle = {
-  fontSize: "calc(18px + 1.2vw)"
+  fontSize: "calc(18px + 1.2vw)",
+  letterSpacing: "1.5px",
+  color: "black", 
+  textShadow: "0.3px 0 0 currentColor"
 }
 
 const FontStyleSubtitle = {
-  fontSize: "calc(18px + 0.3vw)"
+  fontSize: "calc(18px + 0.3vw)",
+  color: "black"
 }
 
 class LandingContent extends Component {
   render() {
     return (
+      <div>
+        
       <Content style={ ContentStyle }>
         <Row style={{ paddingLeft: "10px" }}>
-          <Col xs={24} sm={24} md={11} lg={10} xl={10} xxl={10} style={{ marginTop:"170px", paddingRight: "10px" }}>
+          <Col xs={24} sm={24} md={14} lg={15} xl={15} xxl={15} style={{ height: "calc(100vh - 85px)", direction: "rtl"}}>
+            <video style={{height: "100%", opacity: "0.2", boxShadow: "1px 1px 10px 3px black"}} autoPlay muted loop>
+              <source src="https://s3-ap-southeast-1.amazonaws.com/gosyensp/video.mp4" type="video/mp4"/>
+            </video>
+          </Col> 
+          <Col xs={24} sm={24} md={10} lg={9} xl={9} xxl={9} style={{ marginTop:"170px", paddingLeft: "50px"}}>
             <p style={ FontStyleTitle }>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
             <p style={ FontStyleSubtitle }>Vivamus a eros a diam sollicitudin congue eget quis dolor.</p>
           </Col>
           
-          <Col xs={24} sm={24} md={13} lg={14} xl={14} xxl={14} style={{ height: "calc(100vh - 85px)"}}>
-            <video style={{height: "100%", opacity: "0.3", boxShadow: "1px 1px 10px 3px black"}} autoPlay muted loop>
-              <source src="https://s3-ap-southeast-1.amazonaws.com/gosyensp/video.mp4" type="video/mp4"/>
-            </video>
-          </Col>  
-          
         </Row>
       </Content>
+      </div>
     )
   }
 }

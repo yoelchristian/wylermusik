@@ -11,24 +11,25 @@ const HeaderStyle = {
   width: "100%", 
   margin: "0px auto 0", 
   padding: "0 24px", 
-  background: "transparent"
+  background: "transparent",
 }
 
 const LogoStyle = {
   float: "left", 
   height: "64px",
   width: "auto", 
-  marginRight: "15px"
+  marginRight: "15px",
 }
 
 const LogoTextStyle = {
   display: "inline", 
   fontFamily: "Merriweather", 
-  borderLeft: "1px solid #e5e7ea", 
+  borderLeft: "1px solid #989a9e", 
   paddingLeft: "15px", 
   fontSize: "1.5em",
   letterSpacing: "1.7px",
   textShadow: "0px 1px 1px rgba(150, 150, 150, 0.6)",
+  color: "black"
 }
 
 const MenuStyle = {
@@ -39,10 +40,10 @@ const MenuStyle = {
 
 const MenuItemStyle = {
   float: "right",
-  fontSize: "1.5em",
-  color: "rgb(214, 200, 194)",
+  fontSize: "1.55em",
+  color: "black ",
   marginTop: "7px",
-  textShadow: "1px 1px 2px black"
+  textShadow: "1px 1px 2px white"
 }
 
 class Nav extends Component {
@@ -56,7 +57,7 @@ class Nav extends Component {
               <span style={ LogoTextStyle }>Wyler Instruments</span>
                    
           </Col>
-          <Col xs={0} sm={0} md={10} lg={15} xl={15} xxl={16} style={{ height: "66px" }}>
+          <Col xs={0} sm={0} md={13} lg={15} xl={15} xxl={16} style={{ height: "66px" }}>
             <Menu mode="horizontal" style={ MenuStyle }>
               <Menu.Item style={ MenuItemStyle } key="2" push>About Us</Menu.Item>
               <Menu.Item style={ MenuItemStyle } key="1">Home</Menu.Item>
