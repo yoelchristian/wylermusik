@@ -19,6 +19,7 @@ const LogoStyle = {
   height: "64px",
   width: "auto", 
   marginRight: "15px",
+  marginTop: "5px"
 }
 
 const LogoTextStyle = {
@@ -43,7 +44,7 @@ const MenuItemStyle = {
   fontSize: "1.55em",
   color: "black ",
   marginTop: "7px",
-  
+  textShadow: "1.5px 1.5px 5px #aaa",
 }
 
 class Nav extends Component {
@@ -58,10 +59,7 @@ class Nav extends Component {
             </a>      
           </Col>
           <Col xs={0} sm={0} md={13} lg={15} xl={15} xxl={16} style={{ height: "66px" }}>
-            <Menu mode="horizontal" style={ MenuStyle }>
-              <Menu.Item style={ MenuItemStyle } key="2" push>About Us</Menu.Item>
-              <Menu.Item style={ MenuItemStyle } key="1">Home</Menu.Item>
-            </Menu>
+            
           </Col>
         </Row>
       </Header>

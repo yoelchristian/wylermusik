@@ -20,13 +20,13 @@ const FontStyleTitle = {
   fontSize: "calc(18px + 1.2vw)",
   letterSpacing: "1.5px",
   color: "black", 
-  
+  textShadow: "1.5px 1.5px 5px #aaa",
 }
 
 const FontStyleSubtitle = {
   fontSize: "calc(18px + 0.3vw)",
   color: "black",
-  
+  textShadow: "1.5px 1.5px 5px #aaa",
 }
 
 class LandingContent extends Component {
@@ -37,7 +37,7 @@ class LandingContent extends Component {
       <Content style={ ContentStyle }>
         <Row style={{ paddingLeft: "10px" }}>
           <Col xs={24} sm={24} md={14} lg={15} xl={15} xxl={15} style={{ height: "calc(100vh - 85px)", direction: "rtl"}}>
-            <video style={{height: "100%", minHeight: "500px", opacity: "0.8", boxShadow: "1px 1px 8px 1px black"}} autoPlay muted loop>
+            <video style={{height: "100%", minHeight: "500px", opacity: "0.8", boxShadow: "1px 1px 8px 2px #aaa"}} autoPlay muted loop>
               <source src="https://s3-ap-southeast-1.amazonaws.com/gosyensp/videobw.mp4" type="video/mp4"/>
             </video>
           </Col> 
@@ -46,10 +46,10 @@ class LandingContent extends Component {
             <p style={ FontStyleSubtitle }>Vivamus a eros a diam sollicitudin congue eget quis dolor.</p>
             <Row gutter={16}>
               <Col span={12}>
-                <Button block={true} size="large" ghost style={{color: "pink", borderColor: "pink"}}>Shop Now</Button>
+                <Button block={true} size="large" className="shopNow">SHOP NOW</Button>
               </Col>
               <Col span={12}>
-                <Button block={true} size="large" ghost>Learn More</Button>
+                <Button block={true} size="large" className="learnMore">Learn More</Button>
               </Col>
             </Row>
           </Col>

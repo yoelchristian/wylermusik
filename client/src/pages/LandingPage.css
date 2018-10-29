@@ -1,7 +1,7 @@
 .landingPage {
   width: 100vw;
   height: 100vh;
-  background-image: url("../images/background3-3.jpg");
+  background-image: url("../images/background3-3-min.jpg");
   background-size: cover;
   overflow-x: hidden;
   
@@ -10,4 +10,68 @@
 .backgroundCover {
   background-color: #eeeeee;
   opacity: 0.9;
+}
+
+.shopNow {
+  width: 100%;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.learnMore:hover {
+  background-color: pink;
+  box-shadow: 0px 15px 20px rgba(151, 92, 132, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.learnMore {
+  width: 100%;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: black;
+  background-color: transparent;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.shopNow:hover {
+  background-color: rgb(73, 202, 150);
+  box-shadow: 0px 15px 20px rgba(20, 194, 124, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.shopNows:hover {
+  background-color: rgb(44, 123, 175);
+  box-shadow: 0px 15px 20px rgba(17, 76, 185, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.shopNows:hover {
+  background-color: rgb(221, 153, 25);
+  box-shadow: 0px 15px 20px rgba(185, 107, 17, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
 }
