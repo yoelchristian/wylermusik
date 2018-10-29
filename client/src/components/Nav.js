@@ -52,10 +52,10 @@ class Nav extends Component {
       <Header style={ HeaderStyle }>
         <Row style={{ marginBottom: "20px" }}>
           <Col xs={24} sm={24} md={11} lg={9} xl={9} xxl={8}>
-            
+            <a href="/">
               <img alt="logo" src={require("../images/wylerlogo-transparent.png")} style={ LogoStyle }></img>
               <span style={ LogoTextStyle }>Wyler Instruments</span>
-                   
+            </a>      
           </Col>
           <Col xs={0} sm={0} md={13} lg={15} xl={15} xxl={16} style={{ height: "66px" }}>
             <Menu mode="horizontal" style={ MenuStyle }>
