@@ -6,6 +6,7 @@ const compression = require("compression");
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+app.use(compression());
 // Configure body parser for AJAX requests
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -13,7 +14,7 @@ app.use(bodyParser.json());
 app.use(express.static("client/build"));
 // Add routes, both API and view
 app.use(routes);
-app.use(compression());
+
 
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reactreadinglist");
