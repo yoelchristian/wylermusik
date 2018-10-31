@@ -8,6 +8,7 @@
 
 .backgroundOverlay {
   min-height: 586px;
+  height: 100%;
   background: #e0e0e0;
   opacity: 0.9;
 }
@@ -60,4 +61,37 @@
   box-shadow: 0px 15px 20px rgba(20, 194, 124, 0.4);
   color: #fff;
   transform: translateY(-7px);
+}
+
+#vidCol {
+  height: calc(100vh - 68px);
+}
+
+.introText {
+  transform: translateY(50%);
+  padding-left: 50px;
+}
+
+.vidObject {
+  min-height: 500px;
+}
+
+@media (max-width: 768px) {
+  #vidCol {
+    height: 100%
+  }
+
+  .vidObject {
+    min-height: 0px;
+    width: 100%
+  }
+
+  .introText {
+    transform: translateY(0%);
+    padding-left: 0px;
+  }
+
+  .backgroundOverlay {
+    min-height: 100vh
+  }
 }

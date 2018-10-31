@@ -14,11 +14,14 @@ class LandingPage extends Component {
 
   render() {
     return (
+      <div>
       <div className="landingPage">
       <div className="backgroundOverlay">
         <Nav />
         <LandingContent />
       </div>
+      </div>
+      <div style={{paddingTop: "200px"}}></div>
       </div>
     )
   }
