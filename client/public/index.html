@@ -11,68 +11,66 @@
   <title>Wyler Instruments</title>
   <style type="text/css">
     html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      width: 100%;
     }
 
-    .ipl-progress-indicator.available {
-    opacity: 0;
+    .loadingScreen.remove {
+      opacity: 0;
     }
 
-    .ipl-progress-indicator {
-    background-color: #f5f5f5;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    opacity: 1;
-    pointer-events: none;
-    -webkit-transition: opacity cubic-bezier(.4, 0, .2, 1) 3500ms;
-    -moz-transition: opacity cubic-bezier(.4, 0, .2, 1) 3500ms;
-    transition: opacity cubic-bezier(.4, 0, .2, 1) 3500ms;
-    z-index: 9999;
+    .loadingScreen {
+      background-color: #e0e0e0;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      opacity: 1;
+      pointer-events: none;
+      -webkit-transition: opacity 2s ease-in-out;
+      -moz-transition: opacity 2s ease-in-out;
+      -ms-transition: opacity 2s ease-in-out;
+      -o-transition: opacity 2s ease-in-out;
+      transition: opacity 2s ease-in-out;
+      z-index: 9999;
     }
 
     @-webkit-keyframes fadein {
-    from {
-    opacity: 0;
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
-    to {
-    opacity: 1;
-    }
-    ;
-    }
+
     @-moz-keyframes fadein {
-    from {
-    opacity: 0;
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
-    to {
-    opacity: 1;
-    }
-    ;
-    }
+
     @keyframes fadein {
-    from {
-    opacity: 0;
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
-    to {
-    opacity: 1;
-    };
-  }
 
     .imgas {
-      height: 400px;
-      width: 400px;
-      margin-left: 37%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      min-width: 225px;
     }
+
+    .imageFrame {
+      width: 50%;
+      margin: auto;
+    }
+
   </style>
 </head>
 
 <body>
-  <div class="ipl-progress-indicator" id="ipl-progress-indicator">
-    <div class="insp-logo-frame">
-      <img class="imgas" src="https://s3-ap-southeast-1.amazonaws.com/gosyensp/wylerlogo-transparent.png">
+  <div class="loadingScreen" id="loadingScreen">
+    <div class="imageFrame">
+      <img class="imgas" src="https://s3-ap-southeast-1.amazonaws.com/gosyensp/wylerlogo-xl.png">
     </div>
   </div>
   <noscript>

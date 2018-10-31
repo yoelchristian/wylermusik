@@ -7,8 +7,8 @@ import "./LandingPage.css";
 class LandingPage extends Component {
   componentDidMount() {
     setTimeout( () => {
-      const ele = document.getElementById('ipl-progress-indicator')
-      ele.classList.add('available')
+      const ele = document.getElementById('loadingScreen')
+      ele.classList.add('remove')
     }, 2000)
   }
 

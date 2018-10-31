@@ -40,7 +40,7 @@ class Nav extends Component {
         <Row style={{ marginBottom: "20px" }}>
           <Col xs={24} sm={24} md={11} lg={9} xl={9} xxl={8}>
             <a href="/">
-              <img alt="logo" src={require("../images/wylerlogo-transparent.png")} style={ LogoStyle }></img>
+              <img alt="logo" src={require("../images/wylerlogo-sm.png")} style={ LogoStyle }></img>
               <span style={ LogoTextStyle }>Wyler Instruments</span>
             </a>      
           </Col>
