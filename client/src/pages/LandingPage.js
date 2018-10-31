@@ -9,7 +9,7 @@ class LandingPage extends Component {
     setTimeout( () => {
       const ele = document.getElementById('loadingScreen')
       ele.classList.add('remove')
-    }, 2000)
+    }, 1000)
   }
 
   render() {
