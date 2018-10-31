@@ -29,22 +29,8 @@ const LogoTextStyle = {
   paddingLeft: "15px", 
   fontSize: "1.5em",
   letterSpacing: "1.7px",
-  textShadow: "1.5px 1.5px 5px #aaa",
+  textShadow: "1px 1px 4px #aaa",
   color: "black"
-}
-
-const MenuStyle = {
-  width: "100%",
-  background: "transparent",
-  border: "none",
-}
-
-const MenuItemStyle = {
-  float: "right",
-  fontSize: "1.55em",
-  color: "black ",
-  marginTop: "7px",
-  textShadow: "1.5px 1.5px 5px #aaa",
 }
 
 class Nav extends Component {

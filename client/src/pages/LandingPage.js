@@ -5,10 +5,17 @@ import LandingContent from "../components/LandingContent.js";
 import "./LandingPage.css";
 
 class LandingPage extends Component {
+  componentDidMount() {
+    setTimeout( () => {
+      const ele = document.getElementById('ipl-progress-indicator')
+      ele.classList.add('available')
+    }, 2000)
+  }
+
   render() {
     return (
       <div className="landingPage">
-      <div className="backgroundCover">
+      <div className="backgroundOverlay">
         <Nav />
         <LandingContent />
       </div>
