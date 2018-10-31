@@ -37,7 +37,7 @@ class Nav extends Component {
   render() {
     return (
       <Header style={ HeaderStyle }>
-        <Row style={{ marginBottom: "20px" }}>
+        <Row>
           <Col xs={24} sm={24} md={11} lg={9} xl={9} xxl={8}>
             <a href="/">
               <img alt="logo" src={require("../images/wylerlogo-sm.png")} style={ LogoStyle }></img>
