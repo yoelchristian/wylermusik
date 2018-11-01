@@ -11,7 +11,7 @@ class Nav extends Component {
       <Header className="headerStyle">
       <div className="logoHeader">
         <a href="/">
-          <img alt="logo" src={require("../images/wylerlogo-sm.png")} className="logoStyle"></img>
+          <img alt="logo" src={require("../images/wylerlogo-transparent.png")} className="logoStyle"></img>
           <span className="logoTextStyle">Wyler Instruments</span>
         </a>
       </div>      
