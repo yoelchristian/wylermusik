@@ -37,12 +37,12 @@ class LandingContent extends Component {
         
       <Content style={ ContentStyle }>
         <Row style={{ paddingLeft: "10px" , position: "relative"}}>
-          <Col id="vidCol" xs={24} sm={24} md={14} lg={15} xl={15} xxl={15} style={{direction: "rtl"}}>
+          <Col id="vidCol" xs={24} sm={24} md={24} lg={15} xl={15} xxl={15} style={{direction: "rtl"}}>
             <video className="vidObject" style={{height: "100%", opacity: "0.8", boxShadow: "1px 1px 8px 2px #aaa"}} autoPlay muted loop>
               <source src="https://s3-ap-southeast-1.amazonaws.com/gosyensp/videobw.mp4" type="video/mp4"/>
             </video>
           </Col> 
-          <Col className="introText" xs={24} sm={24} md={10} lg={9} xl={9} xxl={9}>
+          <Col className="introText" xs={24} sm={24} md={24} lg={9} xl={9} xxl={9}>
             <p style={ FontStyleTitle }>Lorem ipsum dolor sit amet.</p>
             <p style={ FontStyleSubtitle }>Vivamus a eros a diam sollicitudin congue eget quis dolor.</p>
             <Row gutter={16}>

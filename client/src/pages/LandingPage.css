@@ -4,6 +4,7 @@
   background: url("../images/background3-3-min.jpg");
   background-size: cover;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .backgroundOverlay {
@@ -68,7 +69,7 @@
 }
 
 .introText {
-  transform: translateY(50%);
+  transform: translateY(75%);
   padding-left: calc(2px + 2vw);
 }
 
@@ -76,14 +77,14 @@
   min-height: 500px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px), (max-aspect-ratio: 30/29) {
   #vidCol {
     height: 100%
   }
 
   .vidObject {
     min-height: 0px;
-    width: 100%
+    width: 100%;
   }
 
   .introText {
