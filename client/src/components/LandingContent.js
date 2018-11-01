@@ -36,7 +36,7 @@ class LandingContent extends Component {
       <div>
         
       <Content style={ ContentStyle }>
-        <Row style={{ paddingLeft: "10px" , position: "relative"}}>
+        <Row>
           <Col id="vidCol" xs={24} sm={24} md={24} lg={15} xl={15} xxl={15} style={{direction: "rtl"}}>
             <video className="vidObject" style={{height: "100%", opacity: "0.8", boxShadow: "1px 1px 8px 2px #aaa"}} autoPlay muted loop>
               <source src="https://s3-ap-southeast-1.amazonaws.com/gosyensp/videobw.mp4" type="video/mp4"/>
