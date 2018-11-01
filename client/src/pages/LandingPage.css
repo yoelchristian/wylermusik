@@ -77,6 +77,33 @@
   min-height: 500px;
 }
 
+.headerStyle {
+  box-shadow: none;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0px auto 0;
+  padding: 0 24px;
+  background: transparent;
+}
+
+.logoStyle {
+  float: left;
+  height: 64px;
+  width: auto;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+
+.logoTextStyle {
+  font-family: 'Merriweather';
+  border-left: 1px solid #989a9e;
+  padding-left: 15px; 
+  font-size: 1.5em;
+  letter-spacing: 1.7px;
+  text-shadow: 1px 1px 4px #aaa;
+  color: black;
+}
+
 @media (max-width: 992px), (max-aspect-ratio: 30/29) {
   #vidCol {
     height: 100%
@@ -90,9 +117,31 @@
   .introText {
     transform: translateY(0%);
     padding-left: 0px;
+    padding-bottom: 30px;
   }
 
   .backgroundOverlay {
     min-height: 100vh
+  }
+
+  .headerStyle {
+    height: auto;
+    text-align: center;
+  }
+
+  .logoHeader {
+    display: inline-block;
+    text-align: center
+  }
+
+  .logoStyle {
+    display: block inline-block;
+    float: none;
+    margin: 10px 0 0 0;
+    height: 100px;
+  }
+
+  .logoTextStyle {
+    display: none;
   }
 }
