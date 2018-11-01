@@ -1,6 +1,5 @@
 .landingPage {
   min-width: 100vw;
-  min-height: 100vh;
   background: url("../images/background3-3-min.jpg");
   background-size: cover;
   overflow-x: hidden;
@@ -118,10 +117,7 @@
     transform: translateY(0%);
     padding-left: 0px;
     padding-bottom: 30px;
-  }
-
-  .backgroundOverlay {
-    min-height: 100vh
+    padding-top: 10px
   }
 
   .headerStyle {

@@ -11,7 +11,7 @@ const ContentStyle = {
   boxShadow: "none", 
   maxWidth: "1200px", 
   width: "100%", 
-  margin: "20px auto 0", 
+  margin: "0px auto 0", 
   padding: "0 24px", 
   background: "transparent",
   height: "100%"
