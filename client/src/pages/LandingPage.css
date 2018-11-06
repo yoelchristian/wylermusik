@@ -1,6 +1,7 @@
 .landingPage {
   min-width: 100vw;
   height: 100vh;
+  min-height: 574px;
   background: url("../images/background3-3-min.jpg");
   background-size: cover;
   overflow-x: hidden;
