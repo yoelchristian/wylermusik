@@ -30,24 +30,29 @@ const FontStyleSubtitle = {
   textShadow: "1.5px 1.5px 5px #aaa",
 }
 
+const shopPage = () => {
+  window.location.href = "http://shop.wyler.id"
+}
+
 class LandingContent extends Component {
+
   render() {
     return (
       <div>
         
       <Content style={ ContentStyle }>
         <Row>
-          <Col id="vidCol" xs={24} sm={24} md={24} lg={24} xl={12} xxl={12} style={{direction: "rtl"}}>
+          <Col id="vidCol" xs={24} sm={24} md={24} lg={24} xl={14} xxl={14} style={{direction: "rtl"}}>
             <video className="vidObject" style={{height: "100%", opacity: "0.8", boxShadow: "1px 1px 8px 2px #aaa"}} autoPlay muted loop>
               <source src="https://s3-ap-southeast-1.amazonaws.com/gosyensp/videobw.mp4" type="video/mp4"/>
             </video>
           </Col> 
-          <Col className="introText" xs={24} sm={24} md={24} lg={24} xl={12} xxl={12}>
+          <Col className="introText" xs={24} sm={24} md={24} lg={24} xl={10} xxl={10}>
             <p style={ FontStyleTitle }>Lorem ipsum dolor sit amet.</p>
             <p style={ FontStyleSubtitle }>Vivamus a eros a diam sollicitudin congue eget quis dolor.</p>
             <Row gutter={16}>
               <Col span={12}>
-                <Button block={true} size="large" className="shopNow">SHOP NOW</Button>
+                <Button onClick={() => shopPage()} block={true} size="large" className="shopNow">SHOP NOW</Button>
               </Col>
               <Col span={12}>
                 <Button block={true} size="large" className="learnMore">Learn More</Button>
