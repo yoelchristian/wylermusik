@@ -9,7 +9,7 @@ const { Meta } = Card;
 
 const ContentStyle = {
   boxShadow: "none", 
-  maxWidth: "1200px", 
+  maxWidth: "1400px", 
   width: "100%", 
   margin: "0px auto 0", 
   padding: "0 24px", 
@@ -47,7 +47,8 @@ class LandingContent extends Component {
               <source src="https://s3-ap-southeast-1.amazonaws.com/gosyensp/videobw.mp4" type="video/mp4"/>
             </video>
           </Col> 
-          <Col className="introText" xs={24} sm={24} md={24} lg={24} xl={10} xxl={10}>
+          <Col xs={24} sm={24} md={24} lg={24} xl={10} xxl={10} className="textContainer">
+          <div className="introText">
             <p style={ FontStyleTitle }>Lorem ipsum dolor sit amet.</p>
             <p style={ FontStyleSubtitle }>Vivamus a eros a diam sollicitudin congue eget quis dolor.</p>
             <Row gutter={16}>
@@ -58,8 +59,8 @@ class LandingContent extends Component {
                 <Button block={true} size="large" className="learnMore">Learn More</Button>
               </Col>
             </Row>
+          </div>
           </Col>
-          
         </Row>
       </Content>
       </div>

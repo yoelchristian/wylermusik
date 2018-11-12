@@ -11,7 +11,7 @@
 .backgroundOverlay {
   min-height: 586px;
   height: 100%;
-  background: #e0e0e0;
+  background: linear-gradient(#ebdada, #e4dada, white);
   opacity: 0.9;
 }
 
@@ -69,9 +69,15 @@
   height: calc(100vh - 68px);
 }
 
+.textContainer {
+  height: calc(100vh - 68px);
+}
+
 .introText {
-  transform: translateY(75%);
-  padding-left: calc(2px + 2vw);
+  position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
+  padding-left: calc(2vw + 10px);
 }
 
 .vidObject {
@@ -80,7 +86,7 @@
 
 .headerStyle {
   box-shadow: none;
-  max-width: 1200px;
+  max-width: 1400px;
   width: 100%;
   margin: 0px auto 0;
   margin-bottom: 10px;
@@ -94,6 +100,7 @@
   width: auto;
   margin-right: 15px;
   margin-top: 5px;
+  display: none;
 }
 
 .logoTextStyle {
@@ -104,6 +111,7 @@
   letter-spacing: 1.7px;
   text-shadow: 1px 1px 4px #aaa;
   color: black;
+  display: none;
 }
 
 @media (max-width: 1200px), (max-aspect-ratio: 30/29) {
@@ -120,8 +128,13 @@
     width: 100%;
   }
 
+  .textContainer {
+    height: auto;
+  }  
+
   .introText {
     transform: translateY(0%);
+    top: 0;
     padding-left: 0px;
     padding-bottom: 30px;
     padding-top: 10px
@@ -139,6 +152,7 @@
   }
 
   .logoStyle {
+    display: block;
     display: block inline-block;
     float: none;
     margin: 10px 0 0 0;
