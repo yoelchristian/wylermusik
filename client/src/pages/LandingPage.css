@@ -125,7 +125,8 @@
 
   .vidObject {
     min-height: 0px;
-    width: 100%;
+    direction: initial;
+    width: 110%;
   }
 
   .textContainer {
