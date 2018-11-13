@@ -12,7 +12,7 @@ const ContentStyle = {
   maxWidth: "1400px", 
   width: "100%", 
   margin: "0px auto 0", 
-  padding: "0 24px", 
+  padding: "0 12px", 
   background: "transparent",
   height: "100%"
 }
